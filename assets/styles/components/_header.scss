@@ -1,0 +1,57 @@
+header{
+    background: url('../img/banner.logo.png') no-repeat;
+    background-size: 115%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+        .logo{
+            position: relative;
+            bottom: 9px;
+            right: 54px;
+           
+        }
+    .bloc_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        ul {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        bottom: 35px;
+
+         li{
+            margin-left: 2px;
+            list-style-type: none;
+         }
+    }form{
+        position: relative;
+
+        i{
+            position: absolute;
+            color: blue;
+            font-size: 11px;
+            top: 10px;
+            left: 28px;
+            cursor: pointer;
+        }
+       input{
+        width: 300px;
+        background-color: rgb(210, 208, 204);
+        border-radius: 15px;
+        height: 30px;
+        text-align: center;
+        border: 2px solid #d2d0cc;
+        font-size: 17px;
+        margin-bottom: 67px;
+        margin-left: 20px;
+       }
+    }
+  }.banner{
+        z-index: -1;
+        position: relative;
+        bottom: 60px;
+        overflow: hidden;
+        }
+    
+}

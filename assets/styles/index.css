@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-color: rgba(24, 26, 27, 0);
+  margin-top: 30px;
+}
+
+.menu__deroulant {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(216, 204, 80);
+  width: 100%;
+  z-index: 12;
+  position: relative;
+  bottom: 60px;
+}
+.menu__deroulant .nav__list-item {
+  list-style-type: none;
+}
+.menu__deroulant .nav__list-item .nav__list-link:hover {
+  transition: all 200ms ease-in-out;
+}
+.menu__deroulant [hidden] {
+  display: none;
+}
+.menu__deroulant :focus {
+  outline: 2px solid black;
+}
+.menu__deroulant :focus:not(:focus-visible),
+.menu__deroulant :focus:not(:-moz-focusring) {
+  outline: 0;
+}
+.menu__deroulant :focus-visible,
+.menu__deroulant :-moz-focusring {
+  outline: 2px solid black;
+}
+.menu__deroulant .nav__toggle {
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  height: 60px;
+  width: 165px;
+  overflow: visible;
+}
+.menu__deroulant .nav__list {
+  width: 330px;
+  padding: 20px;
+}
+.menu__deroulant .nav__rio {
+  background-color: rgb(114, 150, 62);
+}
+.menu__deroulant .nav__rio .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+.menu__deroulant .nav__rio a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__rio .nav__list {
+  background-color: rgb(114, 150, 62);
+}
+.menu__deroulant .nav__mun {
+  background-color: rgb(73, 61, 181);
+}
+.menu__deroulant .nav__mun .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+.menu__deroulant .nav__mun a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__mun .nav__list_mun {
+  background-color: rgb(73, 61, 181);
+}
+.menu__deroulant .nav__enf {
+  background-color: rgb(170, 61, 117);
+}
+.menu__deroulant .nav__enf .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+.menu__deroulant .nav__enf a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__enf .nav__list_enf {
+  background-color: rgb(170, 61, 117);
+}
+.menu__deroulant .nav__aid {
+  background-color: rgb(238, 114, 170);
+}
+.menu__deroulant .nav__aid .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 15px 5px 15px;
+}
+.menu__deroulant .nav__aid a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__aid .nav__list_aid {
+  background-color: rgb(238, 114, 170);
+}
+.menu__deroulant .nav__eco {
+  background-color: rgb(234, 196, 106);
+}
+.menu__deroulant .nav__eco .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+.menu__deroulant .nav__eco a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__eco .nav__list_eco {
+  background-color: rgb(234, 196, 106);
+}
+.menu__deroulant .nav__cult {
+  background-color: rgb(199, 144, 63);
+}
+.menu__deroulant .nav__cult .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+.menu__deroulant .nav__cult a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__cult .nav__list_cult {
+  background-color: rgb(199, 144, 63);
+}
+.menu__deroulant .nav__act {
+  background-color: rgb(114, 150, 62);
+}
+.menu__deroulant .nav__act .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+.menu__deroulant .nav__act a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__act .nav__list_act {
+  background-color: rgb(114, 150, 62);
+}
+.menu__deroulant .nav__prev {
+  background-color: rgb(73, 61, 181);
+}
+.menu__deroulant .nav__prev .first {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 15px 5px 15px;
+}
+.menu__deroulant .nav__prev a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.menu__deroulant .nav__prev .nav__list_prev {
+  width: 255px !important;
+  background-color: rgb(73, 61, 181);
+}
+
+header {
+  background: url("../img/banner.logo.png") no-repeat;
+  background-size: 115%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+header .logo {
+  position: relative;
+  bottom: 9px;
+  right: 54px;
+}
+header .bloc_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+header .bloc_info ul {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: 35px;
+}
+header .bloc_info ul li {
+  margin-left: 2px;
+  list-style-type: none;
+}
+header .bloc_info form {
+  position: relative;
+}
+header .bloc_info form i {
+  position: absolute;
+  color: blue;
+  font-size: 11px;
+  top: 10px;
+  left: 28px;
+  cursor: pointer;
+}
+header .bloc_info form input {
+  width: 300px;
+  background-color: rgb(210, 208, 204);
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #d2d0cc;
+  font-size: 17px;
+  margin-bottom: 67px;
+  margin-left: 20px;
+}
+header .banner {
+  z-index: -1;
+  position: relative;
+  bottom: 60px;
+  overflow: hidden;
+}
+
+footer {
+  background-color: rgb(202, 199, 195);
+}
+footer .nav__footer {
+  display: flex;
+  justify-content: center;
+}
+footer .nav__footer ul .titre {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+footer .nav__footer ul li {
+  list-style-type: none;
+}
+footer .nav__footer ul li:hover {
+  text-decoration: underline;
+}
+footer .nav__footer ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+
+/* More like bootstrap, less accessible */
+/* Shared CSS for Pause, Previous and Next Buttons */
+/* SVG Controls */
+/* More accessible carousel styles, with caption and controls above/below image */
+/* Shared CSS for Pause and Tab Controls */
+/* More accessible caption styling */
+img.reload {
+  padding: 0.25em;
+  display: block-inline;
+  position: relative;
+  top: 6px;
+  height: 0.9em;
+}
+
+.carousel {
+  overflow: hidden;
+  max-height: 485px;
+  max-width: 860px;
+  /*.carousel-items {
+  	padding: 5px;
+  }*/
+}
+.carousel .carousel-inner {
+  position: relative;
+}
+.carousel .carousel-items.focus {
+  padding: 2px;
+  border: solid 3px #005a9c;
+}
+.carousel .carousel-item {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel .carousel-item .carousel-image a img {
+  height: 100%;
+  width: 100%;
+}
+.carousel .carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7882352941);
+  border-radius: 5px;
+  border: 0px solid transparent;
+  width: 386px;
+}
+.carousel .carousel-item .carousel-caption a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0;
+  padding: 30px 10px 10px 20px;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  font-size: 25px;
+}
+.carousel .carousel-item .carousel-caption a:hover {
+  background-color: rgb(0, 0, 0);
+}
+.carousel .carousel-item .carousel-caption a:focus {
+  padding: 4px;
+  border: 2px solid #fff;
+  background-color: rgb(0, 0, 0);
+  outline: none;
+  border-width: 2px solid #fff;
+  color: #fff;
+}
+.carousel .carousel-item .carousel-caption span.contrast {
+  display: inline-block;
+}
+.carousel .carousel-item .carousel-caption span.contrast:hover {
+  background-color: rgb(0, 0, 0);
+}
+.carousel .carousel-item .carousel-caption p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: white;
+  padding: 20px 10px 20px 20px;
+}
+.carousel .carousel-item.active {
+  display: block;
+}
+.carousel .controls {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1em;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  padding: 0.25em 1.25em 0;
+}
+.carousel .controls button {
+  position: absolute;
+  z-index: 10;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.carousel .controls button:focus svg .background {
+  fill: #005a9c;
+  stroke: #005a9c;
+  opacity: 1;
+}
+.carousel .controls button:focus svg .border {
+  stroke: white;
+}
+.carousel .controls button:hover svg .background {
+  fill: #005a9c;
+  stroke: #005a9c;
+  opacity: 1;
+}
+.carousel .controls button:hover svg .border {
+  fill: #005a9c;
+  stroke: #005a9c;
+  opacity: 1;
+}
+.carousel .controls button.previous {
+  left: 0;
+  top: 170px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6980392157);
+}
+.carousel .controls button.previous:focus {
+  background-color: #005a9c;
+  outline: 3px solid white;
+  color: #dcdad7 !important;
+}
+.carousel .controls button.previous:hover {
+  background-color: #005a9c !important;
+  color: #dcdad7 !important;
+}
+.carousel .controls button.previous i {
+  font-size: 30px;
+}
+.carousel .controls button.next {
+  right: 0px;
+  top: 170px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6980392157);
+}
+.carousel .controls button.next:focus {
+  background-color: #005a9c;
+  outline: 3px solid white;
+  color: #dcdad7 !important;
+}
+.carousel .controls button.next:hover {
+  background-color: #005a9c !important;
+  color: #dcdad7 !important;
+}
+.carousel .controls button.next i {
+  font-size: 30px;
+}
+.carousel .controls svg .background {
+  stroke: black;
+  fill: black;
+  stroke-width: 1px;
+  opacity: 0.6;
+}
+.carousel .controls svg .border {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2px;
+}
+.carousel .controls svg .pause {
+  stroke-width: 4;
+  fill: transparent;
+  stroke: transparent;
+}
+.carousel .controls svg .play {
+  stroke-width: 1;
+  fill: transparent;
+  stroke: transparent;
+}
+.carousel .controls svg polygon {
+  fill: white;
+  stroke: white;
+}
+.carousel .controls .pause svg .pause {
+  fill: white;
+  stroke: white;
+}
+.carousel .controls .play svg .play {
+  fill: white;
+  stroke: white;
+}
+
+.carousel-moreaccessible {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: #eee solid 4px;
+  border-radius: 5px;
+}
+.carousel-moreaccessible .carousel-items {
+  padding: 0;
+  border: none;
+}
+.carousel-moreaccessible .carousel-items .carousel-image a {
+  display: block;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+}
+.carousel-moreaccessible .carousel-item {
+  padding: 0;
+  margin: 0;
+  max-height: none;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption {
+  position: static;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  color: black;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption a {
+  display: inline-block;
+  margin: 0;
+  padding: 6px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-moreaccessible .carousel-item .carousel-caption a:focus {
+  padding: 4px;
+  border: 2px solid #005a9c;
+  background-color: transparent;
+  color: black;
+  outline: none;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption span.contrast {
+  background-color: transparent;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption span.contrast:hover {
+  background-color: transparent;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption p {
+  padding: 0;
+  margin: 0;
+}
+.carousel-moreaccessible .carousel-item .carousel-caption h3 {
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+}
+.carousel-moreaccessible .controls {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0.25em 0.25em 0;
+}
+.carousel-moreaccessible .carousel-items.focus {
+  padding: 0;
+  border: none;
+}
+.carousel-moreaccessible .carousel-items.focus .carousel-image a {
+  padding: 2px;
+  border: 3px solid #005a9c;
+}
+
+.carousel.carousel-moreaccessible .controls {
+  position: static;
+  height: 36px;
+}
+.carousel.carousel-moreaccessible .controls button.previous {
+  right: 60px;
+}
+.carousel.carousel-moreaccessible .controls button.next {
+  right: 6px;
+}
+
+main {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+main .calendrier {
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 15px;
+}
+main .calendrier .agenda {
+  display: flex;
+  flex-direction: column;
+}
+main .calendrier .agenda .boule {
+  width: 70px;
+  display: block;
+  height: 60px;
+  border-radius: 35px;
+  background-color: rgb(216, 204, 80);
+  margin-right: 10px;
+  padding-top: 10px;
+}
+main .calendrier .agenda p {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+main .calendrier .agenda p a {
+  color: black;
+  font-size: 14px;
+  padding: 5px;
+  margin: 10px;
+}/*# sourceMappingURL=index.css.map */

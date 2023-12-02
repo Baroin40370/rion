@@ -1,0 +1,187 @@
+.menu__deroulant{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(216, 204, 80);
+  width: 100%;
+  z-index: 12;
+  position: relative;
+  bottom: 60px;
+
+    .nav__list-item {
+          list-style-type: none;
+          
+          
+          .nav__list-link:hover {
+            transition: all 200ms ease-in-out;
+            }
+          }
+        
+
+        [hidden] {
+          display: none;
+          }
+            // Focus styles for keyboard users
+          :focus {
+              outline: 2px solid black;
+          }
+          
+          :focus:not(:focus-visible),
+          :focus:not(:-moz-focusring) {
+              outline: 0;
+          }
+          
+          :focus-visible,
+          :-moz-focusring {
+              outline: 2px solid black;
+          }
+          .nav__toggle {
+            @include nav;
+            height: 60px;
+            width: 165px;
+            overflow: visible;
+            
+          }
+          .nav__list{
+            width: 330px;
+            padding: 20px;
+          }
+          
+          .nav__rio{
+            
+            background-color: rgb(114, 150, 62);
+            .first{
+              font-size: 18px;
+              text-align: center;
+              padding: 15px;
+            }
+            a{
+              @include a;
+            }
+              .nav__list{
+               background-color: rgb(114, 150, 62);
+               
+               
+               }
+            }
+            .nav__mun{
+              
+              background-color:  rgb(73, 61, 181);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 15px;
+              }
+              a{
+                @include a;
+              }
+                .nav__list_mun{
+                 
+                  background-color:  rgb(73, 61, 181);
+                 
+              }
+            }
+            .nav__enf{
+              background-color:  rgb(170, 61, 117);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 15px;
+              }
+              a{
+                @include a;
+              }
+                .nav__list_enf{
+                  
+                  background-color:   rgb(170, 61, 117);
+                }
+
+            }
+            .nav__aid{
+                background-color: rgb(238, 114, 170);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 10px 15px 5px 15px;
+              }
+              a{
+                @include a;
+              }
+                .nav__list_aid{
+                 background-color:  rgb(238, 114, 170);
+                }
+
+            }
+            .nav__eco{
+              
+              background-color:  rgb(234, 196, 106);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 15px;
+              }
+               a { 
+                @include a;
+              }
+                .nav__list_eco{
+                  
+                  background-color:   rgb(234, 196, 106);
+                }
+
+            }
+            .nav__cult{
+              
+              background-color:  rgb(199, 144, 63);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 15px;
+              }
+              a{
+                @include a;
+              }
+                .nav__list_cult{
+                 
+                  background-color:   rgb(199, 144, 63);
+                }
+
+            }
+            .nav__act{
+              
+              background-color: rgb(114, 150, 62);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 15px;
+              }
+              a{
+                @include a;
+              }
+                .nav__list_act{
+                  
+                  background-color: rgb(114, 150, 62);
+                }
+
+            }
+            .nav__prev{
+              
+              background-color:   rgb(73, 61, 181);
+              .first{
+                font-size: 18px;
+                text-align: center;
+                padding: 10px 15px 5px 15px;
+              }
+              a{
+                @include a;
+              }
+                .nav__list_prev{
+                  width: 255px!important;
+                  background-color:  rgb(73, 61, 181);
+                }
+
+            }
+
+
+
+
+
+          }

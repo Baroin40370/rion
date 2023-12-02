@@ -1,0 +1,299 @@
+$color_1: #fff;
+$color_2: black;
+
+$background-color_2: rgb(0 0 0 / 65%);
+$background-color_3: transparent;
+$background-color_4: rgb(0 0 0 / 100%);
+$background-color_5: rgb(0 0 0 / 20%);
+
+/* More like bootstrap, less accessible */
+/* Shared CSS for Pause, Previous and Next Buttons */
+/* SVG Controls */
+/* More accessible carousel styles, with caption and controls above/below image */
+/* Shared CSS for Pause and Tab Controls */
+/* More accessible caption styling */
+img.reload {
+	padding: 0.25em;
+	display: block-inline;
+	position: relative;
+	top: 6px;
+	height: 0.9em;
+}
+.carousel {
+	overflow: hidden;
+	max-height: 485px;
+  	max-width: 860px;
+	.carousel-inner {
+		position: relative;
+	}
+	/*.carousel-items {
+		padding: 5px;
+	}*/
+	.carousel-items.focus {
+		padding: 2px;
+		border: solid 3px #005a9c;
+	}
+	.carousel-item {
+		display: none;
+		
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		.carousel-image {
+			a {
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+		.carousel-caption {
+			position: absolute;
+			bottom: 0;
+			background-color: #000000c9;
+			border-radius: 5px;
+			border: 0px solid $background-color_3;
+			width: 386px;
+			a {
+				cursor: pointer;
+				text-decoration: underline;
+				color: white;
+				font-weight: 600;
+				display: inline-block;
+				margin: 0;
+				padding: 30px 10px 10px 20px;
+				border-radius: 5px;
+				border: 0 solid transparent;
+				font-size: 25px;
+				&:hover {
+					background-color: $background-color_4;
+				}
+				&:focus {
+					padding: 4px;
+					border: 2px solid #fff;
+					background-color: $background-color_4;
+					outline: none;
+					border-width: 2px solid #fff;
+					color: $color_1;
+				}
+			}
+			span.contrast {
+				display: inline-block;
+				&:hover {
+					background-color: $background-color_4;
+				}
+			}
+			p {
+				font-size: 18px;
+				line-height: 1.5;
+				margin-bottom: 0;
+				color: white;
+				padding: 20px 10px 20px 20px;
+			}
+			
+		}
+	}
+	.carousel-item.active {
+		display: block;
+	}
+	.controls {
+		box-sizing: border-box;
+		position: absolute;
+		top: 1em;
+		z-index: 10;
+		display: flex;
+		width: 100%;
+		padding: 0.25em 1.25em 0;
+		button {
+			position: absolute;
+			z-index: 10;
+			flex: 0 0 auto;
+			margin: 0;
+			padding: 0;
+			border: none;
+			background: transparent;
+			outline: none;
+			&:focus {
+				svg  {
+					.background {
+						fill: #005a9c;
+						stroke: #005a9c;
+						opacity: 1;
+					}
+					.border {
+						stroke: white;
+					}
+				}
+			}
+			&:hover {
+				svg  {
+					.background {
+						fill: #005a9c;
+						stroke: #005a9c;
+						opacity: 1;
+					}
+					.border {
+						fill: #005a9c;
+						stroke: #005a9c;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		button.previous {
+			left:0;
+			@include arrow;
+			i{
+				font-size: 30px;
+			}
+		}
+		button.next {
+			right: 0px;
+			@include arrow;
+			i{
+				font-size: 30px;
+			}
+			
+		}
+		
+		svg  {
+			.background {
+				stroke: black;
+				fill: black;
+				stroke-width: 1px;
+				opacity: 0.6;
+			}
+			.border {
+				fill: transparent;
+				stroke: transparent;
+				stroke-width: 2px;
+			}
+			.pause {
+				stroke-width: 4;
+				fill: transparent;
+				stroke: transparent;
+			}
+			.play {
+				stroke-width: 1;
+				fill: transparent;
+				stroke: transparent;
+			}
+			polygon {
+				fill: white;
+				stroke: white;
+			}
+		}
+		.pause {
+			svg {
+				.pause {
+					fill: white;
+					stroke: white;
+				}
+			}
+		}
+		.play {
+			svg {
+				.play {
+					fill: white;
+					stroke: white;
+				}
+			}
+		}
+	}
+}
+.carousel-moreaccessible {
+	.carousel-items {
+		.carousel-image {
+			a {
+				display: block;
+				margin: 0;
+				padding: 5px;
+				text-decoration: none;
+				border: none;
+			}
+		}
+		padding: 0;
+		border: none;
+	}
+	.carousel-item {
+		.carousel-caption {
+			
+
+			a {
+				display: inline-block;
+				margin: 0;
+				padding: 6px;
+				color: $color_2;
+				background-color: $background-color_3;
+				border: none;
+				border-radius: 5px;
+				&:hover {
+					background-color: $background-color_5;
+				}
+				&:focus {
+					padding: 4px;
+					border: 2px solid #005a9c;
+					background-color: $background-color_3;
+					color: $color_2;
+					outline: none;
+				}
+			}
+			span.contrast {
+				background-color: $background-color_3;
+				&:hover {
+					background-color: $background-color_3;
+				}
+			}
+			position: static;
+			padding: 0;
+			margin: 0;
+			height: 60px;
+			color: $color_2;
+			p {
+				padding: 0;
+				margin: 0;
+			}
+			h3 {
+				font-size: 1.1em;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		padding: 0;
+		margin: 0;
+		max-height: none;
+	}
+	padding: 0;
+	margin: 0;
+	position: relative;
+	border: #eee solid 4px;
+	border-radius: 5px;
+	.controls {
+		position: relative;
+		top: 0;
+		left: 0;
+		padding: 0.25em 0.25em 0;
+	}
+	.carousel-items.focus {
+		padding: 0;
+		border: none;
+		.carousel-image {
+			a {
+				padding: 2px;
+				border: 3px solid #005a9c;
+			}
+		}
+	}
+}
+.carousel.carousel-moreaccessible {
+	.controls {
+		position: static;
+		height: 36px;
+		button.previous {
+			right: 60px;
+		}
+		button.next {
+			right: 6px;
+		}
+	}
+}
