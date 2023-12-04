@@ -1,11 +1,43 @@
 footer{
     background-color: rgb(202, 199, 195);
-    
+    margin-top: 100px;
+    .cont_footer{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: auto;
+    .adresse_footer{
+        width: 208px;
+        height: 208px;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        background: #fff;
+        padding: 6px;
+        border-radius: 50%;
+        box-shadow: -2px -5px 6px #3a3a3a;
+        margin-top: 4px;
+        color: black;
+        img{
+            width: 100%;
+        }
+    }.landes{
+        margin-top: 20px;
+        margin-left: 544px;
+        a{
+            
+            margin-right: 20px;
+        }
+    }
+}
    .nav__footer{
     display: flex;
     justify-content: center;
+    max-width: 1300px;
+    margin: auto;
     ul{
-        
+        width: 165px;
+        padding: 0 5px;
         
         .titre{
             text-decoration: none;

@@ -258,10 +258,46 @@ header .banner {
 
 footer {
   background-color: rgb(202, 199, 195);
+  margin-top: 100px;
+}
+footer .cont_footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+}
+footer .cont_footer .adresse_footer {
+  width: 208px;
+  height: 208px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: -2px -5px 6px #3a3a3a;
+  margin-top: 4px;
+  color: black;
+}
+footer .cont_footer .adresse_footer img {
+  width: 100%;
+}
+footer .cont_footer .landes {
+  margin-top: 20px;
+  margin-left: 544px;
+}
+footer .cont_footer .landes a {
+  margin-right: 20px;
 }
 footer .nav__footer {
   display: flex;
   justify-content: center;
+  max-width: 1300px;
+  margin: auto;
+}
+footer .nav__footer ul {
+  width: 165px;
+  padding: 0 5px;
 }
 footer .nav__footer ul .titre {
   text-decoration: none;
