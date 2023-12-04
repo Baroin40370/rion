@@ -2,11 +2,10 @@
   display: flex;
   justify-content: center;
   background-color: rgb(216, 204, 80);
-  width: 100%;
+  width: 1583px;
   z-index: 12;
   position: relative;
-  bottom: 60px;
-
+  height: 58px;
     .nav__list-item {
           list-style-type: none;
           
@@ -36,7 +35,7 @@
           }
           .nav__toggle {
             @include nav;
-            height: 60px;
+            height: 58px;
             width: 165px;
             overflow: visible;
             

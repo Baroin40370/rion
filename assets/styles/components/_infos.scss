@@ -1,0 +1,114 @@
+.infos{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 30px 0px;
+    .calendrier{
+       margin-left: 30px;
+       width: 100%;
+        .agenda {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            h3{
+                font-size: 26px;
+                padding-bottom: 20px;
+                width: 100%;
+            }
+            .boule{
+                min-width: 70px;
+                min-height: 60px;
+                border-radius: 35px 35px 35px 35px;
+                background-color: rgb(216, 204, 80);
+                padding-top: 10px;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                
+                a{
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px;
+                    margin: 10px;
+                }
+            }
+            button{
+                background-color:  rgb(216, 204, 80);
+                padding: 5px;
+                border-radius: 14px 14px 14px 14px;
+                width: 50%;
+                border: none;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                a{
+                    color:black;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    &:focus{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }.cine{
+        background-color: #e5e1e1;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        width: 100%;
+        h3{
+            font-size: 20px;
+            padding: 7px 20px 7px 20px;
+        }
+        img{
+            width: 100%;
+        }.des_cine{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            margin-top: 7px;
+            h3{
+                padding: unset;
+                margin-bottom: 5px;
+            }
+        }
+    }.rion_actus{
+        background-color: #e5e1e1;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        width: 100%;
+        p{
+            font-size: 20px;
+            padding: 7px 20px 7px 20px;
+           a{
+                color: black;
+                line-height: 31.5px;
+                
+            }
+        }ul{
+            li{
+                padding: 7px 20px 7px 20px;
+                list-style-type: none;
+                a{
+                    color: black;
+                    text-decoration: unset;
+                    font-size: 16px;
+                    line-height: 20px;
+                    
+                    
+                    &:hover{
+                        text-decoration: underline;
+                    }&:focus{
+                        text-decoration: underline;
+                    }
+                }
+            }   
+        }   
+    }
+}

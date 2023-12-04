@@ -1,15 +1,14 @@
 header{
-    background: url('../img/banner.logo.png') no-repeat;
-    background-size: 115%;
+    background: url('../img/banner.logo.png') no-repeat center 30px;
+    background-size: 120%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
         .logo{
             position: relative;
             bottom: 9px;
-            right: 54px;
-           
-        }
+            right: 93px;
+           }
     .bloc_info{
         display: flex;
         flex-direction: column;
@@ -50,8 +49,7 @@ header{
   }.banner{
         z-index: -1;
         position: relative;
-        bottom: 60px;
-        overflow: hidden;
+        width: 100%;
         }
     
 }

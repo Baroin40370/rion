@@ -3,9 +3,19 @@
     padding: 0;
     
 body{
-    background-color: rgba(24, 26, 27, 0);
+    background-position: center 122px;
+    background-repeat: no-repeat;
+    background-color: transparent;
     margin-top: 30px;
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        width: 1320px;
     }
+    
+    }
+    
 }
 
 @mixin nav{
@@ -26,6 +36,7 @@ body{
 	border-radius: 50%;
     width: 40px;
     height: 40px;
+    color: white;
 	cursor: pointer;
 	background-color: #000000b2;
 			&:focus{

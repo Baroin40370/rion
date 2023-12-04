@@ -1,0 +1,40 @@
+.actus_tarusate{
+    position: relative;
+    left: 132px;
+    h3{
+        font-size: 25px;
+    }
+    .bloc_tarusate{
+        display: flex;
+        width: 100%;
+        background-color: #70ad20;
+        article{
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            img{
+                width: 100%;
+            }h4{
+                font-size: 20px;
+                line-height: normal;
+                font-weight: bold;
+                padding-bottom: 8px;
+            }#choix{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #changecommune{
+                width: 60%;
+                height: 30px;
+                position: relative;
+                bottom: 38px;
+                border: unset;
+                border-radius: 5px;
+                text-align: center;
+                
+            }
+           }
+        }
+       
+    }
+}

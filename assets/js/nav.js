@@ -48,3 +48,27 @@ document.querySelector(".menu__deroulant").addEventListener('click', function (e
         }
     }
 });
+let objNav = document.querySelector("nav");
+console.log(objNav.offsetTop);
+(function() {
+    // on cible l'objet nav
+    let objNav = document.querySelector("nav");
+    let positionNav = objNav.offsetTop;
+    
+    function sticky(){
+      // position du curseur au scroll
+      let posCurseur = this.pageYOffset;
+      // je teste la différence de distance entre le scroll et nav
+      if(positionNav-posCurseur<1){
+        objNav.style.position = "fixed";
+        objNav.style.top = 0;
+        objNav.style.zIndex = 13;
+      }
+      if(posCurseur<522){
+        objNav.style.position = "relative";
+      }
+    }
+    // evenement
+    window.addEventListener("scroll", sticky);
+  })();
+ 
