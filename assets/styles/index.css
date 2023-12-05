@@ -208,30 +208,34 @@ header {
   flex-flow: row wrap;
   justify-content: center;
 }
-header .logo {
-  position: relative;
-  bottom: 9px;
-  right: 93px;
+header .bloc_header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 1320px;
 }
-header .bloc_info {
+header .bloc_header .logo {
+  width: 100%;
+}
+header .bloc_header .bloc_info {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-header .bloc_info ul {
+header .bloc_header .bloc_info ul {
   display: flex;
   justify-content: end;
-  position: relative;
-  bottom: 35px;
+  margin-bottom: 30px;
 }
-header .bloc_info ul li {
+header .bloc_header .bloc_info ul li {
   margin-left: 2px;
   list-style-type: none;
 }
-header .bloc_info form {
+header .bloc_header .bloc_info form {
   position: relative;
+  margin-top: 40px;
 }
-header .bloc_info form i {
+header .bloc_header .bloc_info form i {
   position: absolute;
   color: blue;
   font-size: 11px;
@@ -239,7 +243,7 @@ header .bloc_info form i {
   left: 28px;
   cursor: pointer;
 }
-header .bloc_info form input {
+header .bloc_header .bloc_info form input {
   width: 300px;
   background-color: rgb(210, 208, 204);
   border-radius: 15px;

@@ -4,27 +4,31 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    .bloc_header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 1320px;
+    
         .logo{
-            position: relative;
-            bottom: 9px;
-            right: 93px;
+            width: 100%;
            }
     .bloc_info{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         ul {
         display: flex;
         justify-content: end;
-        position: relative;
-        bottom: 35px;
-
+        margin-bottom: 30px;
          li{
             margin-left: 2px;
             list-style-type: none;
          }
     }form{
         position: relative;
+        margin-top: 40px;
 
         i{
             position: absolute;
@@ -46,6 +50,7 @@ header{
         margin-left: 20px;
        }
     }
+   }
   }.banner{
         z-index: -1;
         position: relative;
