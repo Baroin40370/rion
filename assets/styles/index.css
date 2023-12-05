@@ -214,6 +214,10 @@ header .bloc_header {
   justify-content: space-between;
   width: 1320px;
 }
+header .bloc_header h1 {
+  position: absolute;
+  right: 9999px;
+}
 header .bloc_header .logo {
   width: 100%;
 }

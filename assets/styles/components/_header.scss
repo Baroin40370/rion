@@ -10,6 +10,10 @@ header{
         flex-flow: row wrap;
         justify-content: space-between;
         width: 1320px;
+        h1{
+            position: absolute;
+            right: 9999px;
+        }
     
         .logo{
             width: 100%;
