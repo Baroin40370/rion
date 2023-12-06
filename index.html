@@ -13,30 +13,30 @@
    
  	<header>
       <div class="bloc_header">
-        <h1>rion ensemble commune du pays tarusate</h1>
-        <a href="#" title="retour accueil"><img class= "logo" src="./assets/img/Rion-des-Landes.png" role="logo" alt=""></a>
+        <h1 class="visually-hidden">rion ensemble commune du pays tarusate</h1>
+        <a href="#" title="retour à l'accueil"><img class= "logo" src="./assets/img/Rion-des-Landes.png" alt="retour à l'accueil"></a>
       
         <div class="bloc_info">
         <ul>
-          <li> <a href="#" title="aller au formulaire pour s'identifier"><img src="./assets/img/login.jpg" alt=""></a></li>
-          <li><a href="#" title="aller sur la page accessibilité "><img src="./assets/img/accessibilite.jpg" alt=""></a></li>
-          <li><a href="#" title="consulter le flux rss"><img src="./assets/img/rss.jpg" alt=""></a></li>
-          <li><a href="#"title="aller sur notre page facebook"><img src="./assets/img/facebook.jpg" alt=""></a></li>
-          <li> <a href="#"title="aller sur notre page twitter"><img src="./assets/img/twitter.jpg" alt=""></a></li>
+          <li> <a href="#" title="s'identifier"><img src="./assets/img/login.jpg" alt="s'identifier"></a></li>
+          <li><a href="#" title="consulter la page accessibilité "><img src="./assets/img/accessibilite.jpg" alt="accessibilité"></a></li>
+          <li><a href="#" title="consulter le flux rss"><img src="./assets/img/rss.jpg" alt="flux rss"></a></li>
+          <li><a href="#" title="consulter notre page facebook"><img src="./assets/img/facebook.jpg" alt="facebook"></a></li>
+          <li> <a href="#" title="aller sur notre page twitter"><img src="./assets/img/twitter.jpg" alt="twitter"></a></li>
        </ul>
     
-        <form class="header-search" action="" role="search">
-          <label class="sr-only" for="rechercher"></label>
-          <i class="fa-solid fa-magnifying-glass" role="img" alt="loupe"></i>
-            <input type="search" id="rechercher" name="rechercher" placeholder="Que recherchez-vous ?">
+        <form class="header-search" action="#" role="search">
+          <label class="sr-only" for="rechercher">rechercher dans la page</label>
+          <i class="fa-solid fa-magnifying-glass" role="button" aria-hidden="true"></i>
+            <input type="search" id="rechercher"  name="rechercher" placeholder="Que recherchez-vous ?">
         </form>
       </div>
     </div>
-     <img class="banner" src="./assets/img/banner_rion.jpg" role="banner" alt="">
+     <img class="banner" src="./assets/img/banner_rion.jpg" alt="">
     </header>
 <main>
-    <nav class="menu__deroulant" role="navigation" aria-label="menu principal">
-      <div class="nav__toggle nav__rio" aria-expanded="false" aria-controls="nav__list">
+    <nav class="menu__deroulant" id="menu" aria-label="menu principal">
+      <div class="nav__toggle nav__rio" aria-expanded="false" aria-controls="menu" role="navigation">
         <a href="#" class="first" title="actualité de rion ensembles">Rion</a>
       
         <ul class="nav__list" hidden>
@@ -63,7 +63,7 @@
         </li>
       </ul>
     </div>
-      <div class="nav__toggle nav__mun" aria-expanded="false" aria-controls="nav__list_mun">
+      <div class="nav__toggle nav__mun" aria-expanded="false" aria-controls="menu" role="navigation">
         <a href="#" class="first">Vie municipale</a>
       
       <ul class="nav__list nav__list_mun" hidden>
@@ -105,7 +105,7 @@
         </li>
       </ul>
     </div>
-      <div class="nav__toggle nav__enf" aria-expanded="false" aria-controls="nav__list_enf">
+      <div class="nav__toggle nav__enf" aria-expanded="false" aria-controls="menu" role="navigation">
         <a href="#" class="first">Enfance, jeunesse</a>
       
       <ul class="nav__list nav__list_enf" hidden>
@@ -137,7 +137,7 @@
       </li>
     </ul>
   </div>
-    <div class="nav__toggle nav__aid" aria-expanded="false" aria-controls="nav__list_aid">
+    <div class="nav__toggle nav__aid" aria-expanded="false" aria-controls="menu" role="navigation">
       <a href="#" class="first">Aide aux personnes</a>
     
     <ul class="nav__list nav__list_aid" hidden>
@@ -167,7 +167,7 @@
     </li>
   </ul>
 </div>
-  <div class="nav__toggle nav__eco" aria-expanded="false" aria-controls="nav__list_eco">
+  <div class="nav__toggle nav__eco" aria-expanded="false" aria-controls="menu" role="navigation">
     <a href="#" class="first">Economie</a>
   <ul class="nav__list nav__list_eco" hidden>
   <li class="nav__list-item">
@@ -178,7 +178,7 @@
   </li>
   </ul>
 </div>
-  <div class="nav__toggle nav__cult" aria-expanded="false" aria-controls="nav__list_cult">
+  <div class="nav__toggle nav__cult" aria-expanded="false" aria-controls="menu" role="navigation">
   <a href="#" class="first">Culture et sports</a>
 
 <ul class="nav__list nav__list_cult" hidden>
@@ -208,7 +208,7 @@
 </li>
 </ul>
 </div>
-<div class="nav__toggle nav__act" aria-expanded="false" aria-controls="nav__list_act">
+<div class="nav__toggle nav__act" aria-expanded="false" aria-controls="menu" role="navigation">
   <a href="#" class="first">Les actus</a>
 
 <ul class="nav__list nav__list_act" hidden>
@@ -220,7 +220,7 @@
 </li>
 </ul>
 </div>
-<div class="nav__toggle nav__prev" aria-expanded="false" aria-controls="nav__list_prev">
+<div class="nav__toggle nav__prev" aria-expanded="false" aria-controls="menu" role="navigation">
   <a href="#" class="first">Prévention et risques</a>
 
 <ul class="nav__list nav__list_prev" hidden>
@@ -245,7 +245,7 @@
   <div class="carousel-inner">
     <div class="controls">
       <button type="button" class="rotation pause" aria-label="pause">
-        <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
           <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
           <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
 
@@ -269,8 +269,8 @@
     <div id="myCarousel-items" class="carousel-items" aria-live="off">
       <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 sur 2">
         <div class="carousel-image">
-          <a href="#">
-            <img src="./assets/img/cruella.jpg" alt="">
+          <a href="#" title="consulter la pièce de théatre">
+            <img src="./assets/img/cruella.jpg" alt="pièce de théatre">
           </a>
         </div>
 
@@ -289,8 +289,8 @@
 
       <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 sur 2">
         <div class="carousel-image">
-          <a href="#">
-            <img src="./assets/img/travaux.jpg" alt="">
+          <a href="#" title="consulter la page concernant les travaux">
+            <img src="./assets/img/travaux.jpg" alt="travaux">
           </a>
         </div>
 
@@ -308,63 +308,88 @@
   </section>
   <section class="info">
   <article>
+    <a href="#" title="Réveillon du nouvel An, consulter le menu">
     <div>
-    <a href="#"><img src="./assets/img/Reveillon.jpg" alt=""></a>
+    <img src="./assets/img/Reveillon.jpg" alt="menu du nouvel an">
   </div>
   <div class="des">
     <h3>Réveillon du Nouvel An</h3>
+    </div>
+    </a>
+  <div class="para">
     <p> proposé par Landes et Bruyères</p>
   </div>
   </article>
   <article>
+    <a href="#" title="aller vers le projet de solidarité">
     <div>
-    <a href="#"><img src="./assets/img/Ados.jpg" alt=""></a>
+    <img src="./assets/img/Ados.jpg" alt="projet de solidarité">
   </div>
   <div class="des">
     <h3>Ados du coeur</h3>
-    <p>Collecte de jeux et jouets</p>
-  </div>
+    </div>
+  </a>
+<div class="para">
+<p>Collecte de jeux et jouets</p>
+</div>
   </article>
   <article>
+    <a href="#" title="voir les travaux de la déchetterie">
     <div>
-    <a href="#"><img src="./assets/img/dechetterie.jpg" alt=""></a>
+    <img src="./assets/img/dechetterie.jpg" alt="travaux déchetterie">
   </div>
   <div class="des_travaux">
     <h3>Travaux de modernisation</h3>
+  </div>
+  </a>
+  <div class="para">
     <p>travaux de la déchetterie du 04 au 08 décembre 2023</p>
   </div>
   </article>
   <article>
+    <a href="#" title="UFOLEP pour les adultes agés de 60 ans et plus">
     <div>
-    <a href="#"><img src="./assets/img/secouriste.png" alt=""></a>
+    <img src="./assets/img/secouriste.png" alt="UFOLEP">
   </div>
   <div class="des">
     <h3>Tous secouristes !</h3>
+    </div>
+  </a>
+  <div class="para">
     <p>Prévention et sensibilisation aux gestes de premiers secours</p>
   </div>
   </article>
   <article>
+     <a href="#" title="actualités de l'harmonie municipal">
     <div>
-    <a href="#"><img src="./assets/img/harmonie.jpg" alt=""></a>
+   <img src="./assets/img/harmonie.jpg" alt="harmonie municipal">
   </div>
   <div class="des">
     <h3>Harmonie municipale</h3>
+  </div>
+  </a>
+  <div class="para">
     <p>Sainte Cécile</p>
   </div>
   </article>
   <article>
+    <a href="#" title="voir activitées Téléthon">
     <div>
-    <a href="#"><img src="./assets/img/telethon.jpg" alt=""></a>
+    <img src="./assets/img/telethon.jpg" alt="Téléthon">
   </div>
   <div class="des">
     <h3>Téléthon</h3>
-    <p>Samedi 02 décembre</p>
+    </div>
+  </a>
+  <div class="para">
+    <p>Samedi 02 décembre 2023</p>
   </div>
   </article>
   <div class="centrage">
-  <button type="button"><a href="#">voir toutes les actualités</a></button>
+  <button type="button">voir toutes les actualités</button>
 </div>
   </section>
+  
   <section class="mairie">
     <article >
       <div class="img_mairie"><img src="./assets/img/infos-mairie.png" alt=""></div>
@@ -381,28 +406,24 @@
       </ul>  
     </div>
     </article>
+</section>
 </div>
-  </section>
-  
-<section class="infos">
+  <section class="infos">
   <div class="calendrier">
   <article class="agenda">
     <h3>Agenda de rion</h3>
-    
-    
     <p><span class="boule"></span><a href="#">Permanence CPAM sur rendez-vous vendredi 01 décembre 2023 à 09:00:00</a></p>
- 
     <p><span class="boule"></span><a href="#">Permanence CARSAT en viso sur rendez-vous vendredi 01 décembre à 09:00:00 </a></p>
     <p><span class="boule"></span><a href="#">Les astuces anti-gaspi vendredi 01 décembre 2023 à 18:00:00</a></p>
     <p><span class="boule"></span><a href="#">Permanence des anciens combattants samedi 02 décembre 2023 à 09:00:00</a></p>
     <p><span class="boule"></span><a href="#">Téléthon samedi 02 décembre 2023 à 09:30:00</a></p>
-    <button type="button"><a href="#">voir toutes les dates</a></button>
+    <button type="button">voir toutes les dates</button>
   </article>
   </div>
   <article class="cine">
     <h3>A l'affiche</h3>
     <div class="img_cine">
-    <a href="#"><img src="./assets/img/cine.jpg" alt="affiche du film'et la fête continue!'"></a>
+    <a href="#" title="séance du film et la fête continue"><img src="./assets/img/cine.jpg" alt="Et la fête continue"></a>
   </div>
   <div class="des_cine">
     <h3>Et la fête continue !</h3>
@@ -425,24 +446,26 @@
 <h3>Actus du pays tarusate</h3>
 <div class="bloc_tarusate">
   <article>
-    <a href="#"><img src="./assets/img/geniales.jpg" alt=""></a>
+    <a href="#" title="saison culturelle 1 2023"><img src="./assets/img/geniales.jpg" alt="saison culturelle"></a>
     <div class="description">
       <h4>Toutes les choses géniales</h4>
       <p>« La liste a commencé après sa première tentative. La liste de tout ce qui est génial dans le monde. Tout ce qui vaut la peine de vivre. » </p>
     </div>
   </article>
   <article>
-    <a href="#"><img src="./assets/img/general.jpg" alt=""></a>
+    <a href="#" title='saison culturelle 2 2023'><img src="./assets/img/general.jpg" alt="saison culturelle"></a>
     <div class="description">
       <h4>CANTO GENERAL</h4>
-      <p> Samedi 11 Novembre, retrouvez le Choeur de Làas aux Arènes de Pontonx-sur-l'Adour !</p>
+      <p>Samedi 11 Novembre 2023, retrouvez le Choeur de Làas aux Arènes de Pontonx-sur-l'Adour ! à 18:00:00</p>
     </div>
   </article>
   <article>
     <div id="choix">						   
-			<img src="./assets/img/choix.png" alt="">
+			<img src="./assets/img/choix.png" alt="17 communes du pays tarusate">
+      <div>
+        <label for="changecommune">choisissez une commune</label>
       <select id="changecommune">
-        <option value="">Choisir une commune</option>
+        <option value="" title="choisissez une commune">Choisir une commune</option>
                     <option value="http://www.mairie-audon.fr">Audon</option>
                     <option value="http://www.begaar.fr/">Bégaar</option>
                     <option value="http://www.beylongue.fr/">Beylongue</option>
@@ -461,12 +484,14 @@
                     <option value="http://www.tartas.fr/">Tartas</option>
                     <option value="http://www.villenave.fr/">Villenave</option>
                 </select>
+              </div>
     </div>
   </article>
 </div>
   </section>
+  
   </div>
- </main>
+  </main>
 <footer>
   <div class="cont_footer">
       <div class="adresse_footer">
@@ -485,9 +510,9 @@
       </a>
       </div>
     </div>
-      <nav class="nav__footer" role="navigation" aria-label="menu secondaire">
-      <ul>
-          <a class="titre" href="#">Rion</a>
+      <nav class="nav__footer" aria-label="menu secondaire">
+          <ul>
+          <li><a class="titre" href="#">Rion</a></li>
           <li><a href="#">L'histoire des villages</a></li>
           <li><a href="#">Rion en images</a></li>
           <li><a href="#">Boos en images</a></li>
@@ -497,7 +522,7 @@
           <li><a href="#">La carte de voirie</a></li>
         </ul>
         <ul>
-          <a class="titre" href="#">Vie municipale</a>
+          <li><a class="titre" href="#">Vie municipale</a></li>
           <li><a href="#">Les commissions de la commune nouvelle</a></li>
           <li><a href="#">les démarches administrative</a></li>
           <li><a href="#">urbanisme</a></li>
@@ -511,7 +536,7 @@
           <li><a href="#">paiement en ligne des prestation municipale</a></li>
         </ul>
         <ul>
-          <a class="titre" href="#">Enfance, jeunesse</a>
+          <li><a class="titre" href="#">Enfance, jeunesse</a></li>
           <li><a href="#">Le Projet Educatif Territorial (PEDT)</a></li>
           <li><a href="#">La petite enfance</a></li>
           <li><a href="#">L'école maternelle</a></li>
@@ -523,7 +548,7 @@
           <li><a href="#">Calendrier scolaire 2023-2024</a></li>
         </ul>
         <ul>
-          <a class="titre" href="#">Aide aux personnes</a>
+          <li><a class="titre" href="#">Aide aux personnes</a></li>
           <li><a href="#">Publicité des actes administratifs</a></li>
           <li><a href="#">L'aide à domicile</a></li>
           <li><a href="#">Le point emploi-Logement</a></li>
@@ -534,12 +559,12 @@
           <li><a href="#">ADIL</a></li>
         </ul>
         <ul>
-          <a class="titre" href="#">Economie</a>
+          <li> <a class="titre" href="#">Economie</a></li>
           <li><a href="#">Artisans et commerçants</a></li>
           <li><a href="#">Gestion des déchets</a></li>
          </ul>
         <ul>
-          <a class="titre" href="#">Culture et sports</a>
+          <li><a class="titre" href="#">Culture et sports</a></li>
           <li><a href="#">Vie associative</a></li>
           <li><a href="#">Service des sports</a></li>
           <li><a href="#">La médiathèque Henri Emmanuelli</a></li>
@@ -550,12 +575,12 @@
           <li><a href="#">L'office de tourisme communautaire</a></li>
         </ul>
         <ul>
-          <a class="titre" href="#">Les actus</a>
+          <li><a class="titre" href="#">Les actus</a></li>
           <li><a href="#">Agenda</a></li>
           <li><a href="#">Les événements</a></li>
           </ul>
         <ul>
-          <a class="titre" href="#">Prévention et risques</a>
+          <li><a class="titre" href="#">Prévention et risques</a></li>
           <li><a href="#">Le plan communal de sauvegarde-PCS</a></li>
           <li><a href="#">DICRMI</a></li>
           <li><a href="#">la défense des forêts contre l'incendie-DFCI</a></li>
@@ -563,8 +588,7 @@
         </ul>
   </nav>
       </footer>
+      <script src="assets/js/nav.js"></script>
+      <script src="assets/js/slider.js"></script>
     </body>
- <script src="./assets/js/nav.js"></script>
- <script src="./assets/js/slider.js"></script>
-   
-  </html>
+ </html>
